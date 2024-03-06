@@ -38,8 +38,8 @@ export class AppComponent implements OnInit{
     this.weatherService.GetWeatherData().subscribe(
       (data)=>{
         this.temp = data.main;
-        this.b=data.base;
-        this.v=data.visibility;
+        this.b = data.base;
+        this.v = data.visibility;
         this.coordinate=data.coord;
         this.windy=data.wind;
         this.clouds=data.clouds;
