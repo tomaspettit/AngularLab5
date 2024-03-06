@@ -14,8 +14,18 @@ import { CommonModule } from '@angular/common';
 export class AppComponent implements OnInit{
   students:any=[];
   weather:any=[];
+  b:any="";
+  v:any="";
+  clouds:any="";
+  dt:any="";
   temp:any = "";
+  coordinate:any="";
   windy:any="";
+  system:any="";
+  time:any="";
+  id:any="";
+  name:any="";
+  cod:any="";
 
   constructor(private studentService: StudentService, private weatherService: WeatherService){}
 
@@ -28,8 +38,18 @@ export class AppComponent implements OnInit{
     this.weatherService.GetWeatherData().subscribe(
       (data)=>{
         this.temp = data.main;
+        this.b=data.base;
+        this.v=data.visibility;
+        this.coordinate=data.coord;
         this.windy=data.wind;
+        this.clouds=data.clouds;
+        this.dt=data.dt;
         this.weather = data.weather;
+        this.system= data.sys;
+        this.time=data.timezone;
+        this.id=data.id;
+        this.name=data.name;
+        this.cod=data.cod;
       }
     );
   }

@@ -7,20 +7,51 @@
 </ol>
 
 <h1>Weather in Galway</h1>
+<h2>Coord</h2>
+<p>Lon: {{coordinate.lon}}</p>
+<p>Lat: {{coordinate.lat}}</p>
+<hr>
 <h2>Weather</h2>
   <p *ngFor="let w of weather">
-    {{w.main}}, {{w.description}}
+    ID: {{w.id}}, Main: {{w.main}}, Description: {{w.description}}, Icon: {{w.icon}}
   </p>
+  <hr>
+  <h2>Base</h2>
+  <p>Base: {{b.base}}</p>
   <h2>Main</h2>
-  <p>{{temp.temp}}</p>
-  <p>{{temp.feels_like}}</p> 
-  <p>{{temp.temp_min}}
-  <p>{{temp.temp_max}}</p>
-  <p>{{temp.pressure}}</p>
-  <p>{{temp.humidity}}</p>
-  <p>{{temp.sea_level}}</p>
-  <p>{{temp.grnd_level}}</p>
+  <p>Temp: {{temp.temp}}</p>
+  <p>Feels_like: {{temp.feels_like}}</p> 
+  <p>Temp_min: {{temp.temp_min}}
+  <p>Temp_max: {{temp.temp_max}}</p>
+  <p>Pressure: {{temp.pressure}}</p>
+  <p>Humidity: {{temp.humidity}}</p>
+  <p>Sea_level: {{temp.sea_level}}</p>
+  <p>Grnd_level: {{temp.grnd_level}}</p>
+  <hr>
+  <h2>Visibility</h2>
+  <p>Visibility: {{v.visivilisy}}</p>
+  <hr>
   <h2>Wind</h2>
-  <p>{{windy.speed}}</p>
-  <p>{{windy.deg}}</p>
-  <p>{{windy.gust}}</p>
+  <p>Speed: {{windy.speed}}</p>
+  <p>Deg: {{windy.deg}}</p>
+  <p>Gust: {{windy.gust}}</p>
+  <hr>
+  <h2>Clouds</h2>
+  <p>Clouds: {{clouds.clouds}}</p>
+  <hr>
+  <h2>Dt</h2>
+  <p>Dt: {{dt.dt}}</p>
+  <hr>
+  <h2>Sys</h2>
+  <p>Country: {{system.country}}</p>
+  <p>Sunrise: {{sysetm.sunrise}}</p>
+  <p>Sunset: {{system.sunset}}</p>
+  <hr>
+  <p>Timezone: {{time.timezone}}</p>
+  <hr>
+  <p>ID: {{id.id}}</p>
+  <hr>
+  <p>Name: {{name.name}}</p>
+  <hr>
+  <p>Cod: {{cod.cod}}</p>
+  <hr>
